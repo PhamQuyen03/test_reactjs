@@ -2,82 +2,8 @@ import React, { Component } from 'react';
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 import './App.css';
 
-const data = [
-{
-    "code": "AAA.AX",
-    "company": "AAA",
-    "Volume":1000000,
-    "price": 0.9292,
-    "values":  "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "BBB.AX",
-    "company": "BBB",
-    "Volume":1000000,
-    "price": 1.0770,
-    "values": "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "CCC.AX",
-    "company": "CCC",
-    "Volume":1000000,
-    "price": 1.6292,
-    "values": "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "DDD.AX",
-    "company": "DDD",
-    "Volume":1000000,
-    "price": 1.4292,
-    "values": "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "EEE.AX",
-    "company": "EEE",
-    "Volume":1000000,
-    "price": 0.9292,
-    "values": "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "FFF.AX",
-    "company": "FFF",
-    "Volume":1000000,
-    "price": 0.8292,
-    "values": "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "GGG.AX",
-    "company": "GGG",
-    "Volume":1000000,
-    "price": 117.7292,
-    "values": "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  },
-  {
-    "code": "HHH.AX",
-    "company": "HHH",
-    "Volume":1000000,
-    "price": 60.7292,
-    "values":  "919000.00",
-    "change_value": "0.00",
-    "percent": "0.00",
-  }
+const data = require('./data.json');
 
-]
-;
 var TopLoser = [];
 function columnClassNameFormat(fieldValue, row, rowIdx, colIdx) {
   return fieldValue < 0 ? 'td-column-function-negative' : 'td-column-function-positive';

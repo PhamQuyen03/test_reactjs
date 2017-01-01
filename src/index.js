@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import { Nav, Navbar, NavDropdown, MenuItem, NavItem, Tabs, Tab } from 'react-bootstrap';
 import App from './App';
 import Finance from './Finance'
-import axios from 'axios';
 import './index.css';
 
 //nhung chuc nang chinh
