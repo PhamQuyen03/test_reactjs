@@ -1,0 +1,18 @@
+body {
+}
+.td-column-function-negative {
+	color: #ff3a65;
+}
+.td-column-function-positive {
+	color:  #3cdf87;
+}
+.code {
+	color: #4391e0;
+}
+.company {
+	color: #9a9a9a;
+}
+tr {
+	font-size: 18px;
+	font-weight: bold;
+}
